@@ -1,0 +1,3 @@
+#!/bin/bash
+
+print("\n" "Programming is like building a multilingual puzzule")
