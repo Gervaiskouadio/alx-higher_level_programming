@@ -1,3 +1,2 @@
-#!/bin/bash
-
-print("\n" "Programming is like building a multilingual puzzule")
+#!/usr/bin/python3
+print("\n"Programming is like building a multilingual puzzule")
