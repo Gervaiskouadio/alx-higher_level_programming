@@ -4,5 +4,4 @@ class Square:
     """
     Class of the squares
     """
-    def __dict__(self):
-        pass
+    pass
