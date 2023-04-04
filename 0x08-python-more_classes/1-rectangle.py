@@ -5,26 +5,26 @@
 class Rectangle:
     """represent rectangle."""
 
-    def width(self, value):
+    def width(self, width):
         """Initilize a new width.
 
-        Args: value (int): the width of the new rectangle.
+        Args: width (int): the width of the new rectangle.
         """
-        if not isinstance(value, int):
-            raise TypeError("value must be an integer")
-        elif value < 0:
-            raise ValueError("value must be >= 0")
-        self.width = value
-    def height(sel, value):
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        elif width < 0:
+            raise ValueError("width must be >= 0")
+        self.width = width
+    def height(sel, height):
         """Initilize a new height.
 
-        Args: value (int): the height of a new rectangle.
+        Args: height (int): the height of a new rectangle.
         """
-        if not isinstance(value, int):
-            raise TypeError("value must be an integer")
-        elif value < 0:
-            raise ValueError("value must be >= 0")
-        self.height = value
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        elif height < 0:
+            raise ValueError("height must be >= 0")
+        self.height = height
 
 
 
