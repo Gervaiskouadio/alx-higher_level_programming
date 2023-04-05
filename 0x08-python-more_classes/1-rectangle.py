@@ -13,7 +13,6 @@ class Rectangle:
             height (int): the height of a new rectangle.
         """
         self.width = width
-        sel.height = height
 
     @property
     def width(self):
@@ -26,6 +25,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
+         self.width = width
 
     @property 
     def height(self):
@@ -37,3 +37,4 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
+        self.height = height
