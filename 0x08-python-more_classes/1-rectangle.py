@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""define a rectangle."""
+#1-rectangle.py
+"""function that defines the width and the height of a rectangle."""
 
 
 class Rectangle:
@@ -25,8 +26,3 @@ class Rectangle:
         elif height < 0:
             raise ValueError("height must be >= 0")
         self.height = height
-
-
-
-
-
