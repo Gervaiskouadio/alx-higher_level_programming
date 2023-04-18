@@ -1,0 +1,47 @@
+class Rectangle(Base):
+    def __init__(self, width, height, x=0, y=0, id=None):
+        super().__init__(id)
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+
+    def area(self):
+        return self.width * self.height
+
+    def display(self):
+        for i in range(self.y):
+            print()
+        for i in range(self.height):
+            for j in range(self.x):
+                print(" ", end="")
+            for j in range(self.width):
+                print("#", end="")
+            print()
+
+    def __str__(self):
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        attrs = ["id", "width", "height", "x", "y"]
+        if args is not None and len(args) > 0:
+            for i, attr in enumerate(args):
+                setattr(self, attrs[i], attr)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        return {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
+
+r1 = Rectangle(10, 7, 2, 8)
+r2 = Rectangle(2, 4)
+rectangles = [r1, r2]
+Rectangle.save_to_file(rectangles)
