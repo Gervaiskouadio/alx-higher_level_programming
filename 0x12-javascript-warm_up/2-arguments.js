@@ -1,5 +1,4 @@
 #!/usr/bin/node
-#!/usr/bin/node
 const process = require('process');
 let resp;
 if (process.argv.length === 3) {
