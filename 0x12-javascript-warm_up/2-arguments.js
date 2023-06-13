@@ -1,11 +1,11 @@
 #!/usr/bin/node
-const argsLength = process.argv.length;
-let answer
-if (argsLength < 2) {
-  answer = "No argument";
-} else if (argsLength === 3) {
-  answer = "Argument found";
+const argslength = require('process');
+let aswr;
+if (process.argv.length === 3) {
+  aswr = 'Argument found';
+} else if (process.argv.length < 3) {
+  aswr = 'No argument';
 } else {
-  answer = "Arguments found";
+  aswr = 'Arguments found';
 }
-console.log(answer);
+console.log(aswr);
