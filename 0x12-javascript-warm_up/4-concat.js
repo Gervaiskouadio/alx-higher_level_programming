@@ -1,12 +1,8 @@
 #!/usr/bin/node
-const process = require('process');
+const args = process.argv.slice(2);
 
-let val1;
-let val2;
-if (process.argv.length > 2) {
-  if (process.argv.length > 3) {
-    val2 = process.argv[3];
-  }
-  val1 = process.argv[2];
+if (args.length >= 2) {
+  console.log(`${args[0]} is ${args[1]}`);
+} else {
+  console.log("Please provide two arguments.");
 }
-console.log(val1 + ' is ' + val2);
